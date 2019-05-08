@@ -38,30 +38,11 @@ a {
 	margin: 0;
 }
 
-.navbarBox {
+.buttonBox {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;
 	width: 65%;
-	height: 100%;
-	margin: 0;
-}
-
-.navbarItem {
-	display: inline-block;
-	margin: 0 1em;
-}
-
-.navbarItem a {
-	font-size: 1.2em;
-	margin: 0;
-}
-
-.buttonBox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: 0 10% 0 15px;
 }
 
