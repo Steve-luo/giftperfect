@@ -306,12 +306,9 @@ a {
 		width: 100%;
 	}
 
-	.navbarBox {
-		justify-content: center;
-		width: 100%
-	}
-
 	.buttonBox {
+		justify-content: center;
+		width: 100%;
 		margin: 0;
 	}
 
