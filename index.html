@@ -15,35 +15,115 @@
 	<meta property="og:image" content="https://giftperfect.biz/img/background.jpg"/>
 
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="icon" type="image/png" href="favicon.png" />
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar sticky-top navbar-expand-lg navbar-dark px-5 align-middle">
-		<a class="navbar-brand" href="#">Gift Perfect</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse text-right" id="navbarNav">
-			<ul class="navbar-nav  ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</li>
-			</ul>
+	<div class="navbar">
+		<div class="logo"><p>GiftPerfect</p></div>
+		<div class="navbarBox">
+			<div class="navbarItem"><a onclick="showMessage()" href="javascript:void(0);">Features</a></div>
+			<div class="navbarItem"><a onclick="showMessage()" href="javascript:void(0);">Pricing</a></div>
+			<div class="navbarItem"><a onclick="showMessage()" href="javascript:void(0);">Contact</a></div>
 		</div>
-	</nav>
+		<div class="buttonBox">
+			<a onclick="showMessage()" href="javascript:void(0);"><div class="loginButton"><i class="fa fa-lock"></i><span>Login</span></div></a>
+			<a onclick="showMessage()" href="javascript:void(0);"><div class="signupButton"><i class="fas fa-user-plus"></i><span>Signup</span></div></a>
+		</div>
+	</div>
+	<div class="section" id="title">
+		<div class="sectionContent">
+			<h1>Pick the perfect gift</h1>
+			<h3>with our AI-powered system</h2>
+		</div>
+	</div>
+	<div class="section" id="features">
+		<div class="sectionContent">
+			<h1>Machine Learning and Big Data Support</h1>
+			<h3>ensure the right gift for the right person</h2>
+		</div>
+	</div>
+	<div class="section" id="pricing">
+		<div class="sectionContent">
+			<h2>Pricing</h2>
+			<div class="pricingBox">
+				<div class="pricingChart">
+					<div class="listHeading">
+						<h4>Basic Plan</h4>
+						<p>Free</p>
+					</div>
+					<div class="listContent">
+						<ul>
+							<li>All Public Holidays</li>
+							<li>Up to 2 Anniversaries</li>
+							<li>Up to 2 Gift Receivers</li>
+							<li class="noDivider">Basic Email Support</li>
+							<li class="blankLine"></li>
+							<li class="blankLine"></li>
+							<li class="blankLine"></li>
+							<li class="blankLine"></li>
+							<li class="blankLine"></li>
+						</ul>
+					</div>
+					<a onclick="showMessage()" href="javascript:void(0);"><div class="listFooter"><h4>Signup Now</h4></div></a>
+				</div>
+				<div class="pricingChart">
+					<div class="listHeading">
+						<h4>Premium Plan</h4>
+						<p>$5.99/month, billed annually</p>
+					</div>
+					<div class="listContent">
+						<ul>
+							<li>All Public Holidays</li>
+							<li>Unlimited Anniversaries</li>
+							<li>Unlimited Receivers</li>
+							<li>24/7 Live Chat Support</li>
+							<li>Anniversary Reminder</li>
+							<li>Automatic Gift-picking</li>
+							<li class="noDivider">Late Arrival Insurance</li>
+							<li class="blankLine"></li>
+							<li class="blankLine"></li>
+						</ul>
+					</div>
+					<a onclick="showMessage()" href="javascript:void(0);"><div class="listFooter"><h4>Signup Now</h4></div></a>
+				</div>
+				<div class="pricingChart">
+					<div class="listHeading">
+						<h4>Business Plan</h4>
+						<p>Contact us for pricing</p>
+					</div>
+					<div class="listContent">
+						<ul>
+							<li>All Public Holidays</li>
+							<li>Unlimited Anniversaries</li>
+							<li>Unlimited Receivers</li>
+							<li>1 on 1 Specialist Support</li>
+							<li>Anniversary Reminder</li>
+							<li>Automatic Gift-picking</li>
+							<li>Late Arrival Insurance</li>
+							<li>Coporate Discount</li>
+							<li class="noDivider">Customized Gift</li>
+						</ul>
+					</div>
+					<a onclick="showMessage()" href="javascript:void(0);"><div class="listFooter"><h4>Signup Now</h4></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footerContent" id="wideWidth"><p>© 2048-2049 GiftPerfect Information Technology, LLC</p></div>
+		<div class="footerContent" id="narrowWidth"><p>© 2048-2049<br>GiftPerfect Information Technology, LLC</p></div>
+	</div>
+
+	<div class="dimmer" id="dimmer"  onclick="hideMessage()">
+		<div class="notiBox">
+			<div class="notiContent">
+				<p>This is an concept of a gift-picking service in the future. This website is not functional. </p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/dimmer.js"></script>
 </body>
 </html>
